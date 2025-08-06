@@ -1,0 +1,6 @@
+@CensorshipService_HostAddress = http://localhost:5197
+
+GET {{CensorshipService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

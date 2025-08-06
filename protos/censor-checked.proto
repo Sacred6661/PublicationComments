@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package messaging;
+
+message CensorChecked {
+	int64 comment_id = 1;
+	bool has_banned_words = 2;
+	optional string censored_text = 3;
+}

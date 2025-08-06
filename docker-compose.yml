@@ -1,0 +1,56 @@
+services:
+  postgres-users:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    ports:
+      - 5433:5432
+    volumes:
+      - /var/lib/postgresql/data
+  postgres-posts:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    ports:
+      - 5435:5432
+    volumes:
+      - /var/lib/postgresql/data
+  postgres-comments:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    ports:
+      - 5436:5432
+    volumes:
+      - /var/lib/postgresql/data
+  postgres-profile:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespw
+    ports:
+      - 5437:5432
+    volumes:
+      - /var/lib/postgresql/data
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - 5672:5672
+      - 15672:15672
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: my_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres-users
+      - postgres-posts
+      - postgres-comments
+  
+  

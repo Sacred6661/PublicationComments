@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package messaging;
+
+message ProfileEdited {
+	string user_id = 1;
+	string first_name = 2;
+	string last_name = 3;
+	string phone_number = 4;
+	string avatar_url = 5;
+}

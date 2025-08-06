@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostService", "src\PostService\PostService.csproj", "{33C289B4-8552-4E6D-B834-7F212811449E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentService", "src\CommentService\CommentService.csproj", "{43468CAA-DCFD-424A-927D-47701120D561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "src\ApiGateway\ApiGateway.csproj", "{529F6899-54B4-41A8-9B93-AB7781BFA81D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "src\AuthService\AuthService.csproj", "{13D14CA8-A5A5-46E5-882F-E8BB2B225E00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "protos", "protos", "{572A85BB-E493-464B-BFC8-15A578D036E9}"
+	ProjectSection(SolutionItems) = preProject
+		protos\censor-checked.proto = protos\censor-checked.proto
+		protos\comment-added.proto = protos\comment-added.proto
+		protos\profile-edited.proto = protos\profile-edited.proto
+		protos\user-registered.proto = protos\user-registered.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{CBC095F3-8A6E-4BDB-94AB-303C6609D013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileService", "src\ProfileService\ProfileService.csproj", "{B24829D8-A559-42D6-ADDC-0CBFCA4ACB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CensorshipService", "src\CensorshipService\CensorshipService.csproj", "{24F0231F-77E9-4ECB-BAE8-E6945FA5E510}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33C289B4-8552-4E6D-B834-7F212811449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C289B4-8552-4E6D-B834-7F212811449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C289B4-8552-4E6D-B834-7F212811449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C289B4-8552-4E6D-B834-7F212811449E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43468CAA-DCFD-424A-927D-47701120D561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43468CAA-DCFD-424A-927D-47701120D561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43468CAA-DCFD-424A-927D-47701120D561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43468CAA-DCFD-424A-927D-47701120D561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529F6899-54B4-41A8-9B93-AB7781BFA81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529F6899-54B4-41A8-9B93-AB7781BFA81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529F6899-54B4-41A8-9B93-AB7781BFA81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529F6899-54B4-41A8-9B93-AB7781BFA81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D14CA8-A5A5-46E5-882F-E8BB2B225E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D14CA8-A5A5-46E5-882F-E8BB2B225E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D14CA8-A5A5-46E5-882F-E8BB2B225E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D14CA8-A5A5-46E5-882F-E8BB2B225E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC095F3-8A6E-4BDB-94AB-303C6609D013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC095F3-8A6E-4BDB-94AB-303C6609D013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC095F3-8A6E-4BDB-94AB-303C6609D013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC095F3-8A6E-4BDB-94AB-303C6609D013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24829D8-A559-42D6-ADDC-0CBFCA4ACB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24829D8-A559-42D6-ADDC-0CBFCA4ACB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24829D8-A559-42D6-ADDC-0CBFCA4ACB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24829D8-A559-42D6-ADDC-0CBFCA4ACB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F0231F-77E9-4ECB-BAE8-E6945FA5E510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F0231F-77E9-4ECB-BAE8-E6945FA5E510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F0231F-77E9-4ECB-BAE8-E6945FA5E510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F0231F-77E9-4ECB-BAE8-E6945FA5E510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFED7270-EC6B-4F55-BBEF-79324203713E}
+	EndGlobalSection
+EndGlobal

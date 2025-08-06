@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package messaging;
+
+message UserRegistered {
+  string user_id = 1;
+  string user_name = 2;
+  string email = 3;
+}

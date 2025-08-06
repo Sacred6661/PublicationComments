@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package messaging;
+
+message CommentAdded {
+	int64 comment_id = 1;
+	string text = 2;
+}
